@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lana Autopeças | Rede ANCORA Itabira</title>
+<meta name="description" content="Pensou em peças, pensou LANA. 35 anos de história em Itabira, linha leve e pesada. Peça no WhatsApp, veja como chegar e avalie a Lana no Google.">
+<link rel="canonical" href="https://marcel0gs.github.io/lana-autopecas-itabira/">
+<meta property="og:title" content="Lana Autopeças | Pensou em peças, pensou LANA">
+<meta property="og:description" content="WhatsApp, redes sociais, como chegar e avaliações no Google.">
+<meta property="og:image" content="https://marcel0gs.github.io/lana-autopecas-itabira/assets/img/fachada.webp">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1d45">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2312305e'/%3E%3Cpath d='M0 22h32v10H0z' fill='%232fbf3a'/%3E%3Ctext x='16' y='19' font-family='Arial' font-weight='900' font-size='11' fill='white' text-anchor='middle'%3ELANA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul: #12305e; --verde: #2fbf3a; --vermelho: #d4202a;
+    --fundo: #061230; --cartao: #0c1d44; --cartao2: #142a5c;
+    --texto: #f3f6ff; --mudo: #a8b5d6; --linha: rgba(47, 191, 58, .22);
+    --zap: #25d366; --zap-escuro: #0a3d1d;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--fundo); color: var(--texto);
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif; line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 2px solid var(--verde); outline-offset: 3px; border-radius: 14px; }
+  .pagina { max-width: 480px; margin: 0 auto; padding-bottom: 2.5rem; }
+
+  /* ---------- topo: fachada com parallax leve ---------- */
+  .topo { position: relative; height: 260px; overflow: hidden; isolation: isolate; }
+  .topo img {
+    position: absolute; inset: -30px 0 0; width: 100%; height: calc(100% + 30px);
+    object-fit: cover; object-position: center 30%; z-index: -2; will-change: transform;
+  }
+  .topo::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(180deg, rgba(6, 18, 48, 0) 35%, rgba(6, 18, 48, .55) 70%, var(--fundo) 100%);
+  }
+  .topo__selo {
+    position: absolute; top: 14px; right: 14px; padding: .32rem .7rem; border-radius: 999px;
+    background: rgba(6, 18, 48, .72); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    font-size: .74rem; font-weight: 700; letter-spacing: .02em; color: #fff; border: 1px solid var(--linha);
+  }
+
+  /* ---------- identidade: o avatar repete o do Instagram (marinho, faixa verde, selo ANCORA) ---------- */
+  .perfil { position: relative; text-align: center; padding: 0 1rem; margin-top: -64px; }
+  .perfil__logo {
+    position: relative; width: 120px; height: 120px; margin: 0 auto .9rem; border-radius: 50%; overflow: hidden;
+    background: var(--azul); border: 4px solid #fff; display: grid; place-items: center;
+    box-shadow: 0 0 0 6px var(--fundo), 0 10px 30px rgba(0, 0, 0, .5);
+  }
+  .perfil__logo::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 27%; background: var(--verde); }
+  .perfil__logo svg { width: 72%; height: auto; margin-top: -14px; }
+  .perfil__ancora {
+    position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); z-index: 1;
+    background: var(--vermelho); color: #fff; border: 2px solid #fff; border-radius: 999px;
+    font-size: .56rem; font-weight: 900; letter-spacing: .03em; padding: .08rem .45rem; white-space: nowrap;
+  }
+  .perfil h1 { margin: 0; font-size: 1.55rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.15; }
+  .perfil h1 em { font-style: italic; font-weight: 900; color: var(--verde); }
+  .perfil__slogan { margin: .35rem 0 0; font-style: italic; font-weight: 900; font-size: 1.25rem; letter-spacing: -.01em; }
+  .perfil__slogan b { color: var(--verde); }
+  .perfil__linha { margin: .45rem auto 0; max-width: 34ch; color: var(--mudo); font-size: .95rem; }
+
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin: 1rem 0 .8rem; }
+  .chip {
+    display: inline-flex; align-items: center; gap: .4rem; padding: .38rem .75rem; border-radius: 999px;
+    background: var(--cartao); border: 1px solid var(--linha); font-size: .82rem; font-weight: 600;
+  }
+  .chip svg { width: 15px; height: 15px; }
+  .chip--nota svg { fill: #fbbc05; stroke: #fbbc05; }
+  .chip--status .ponto { width: 8px; height: 8px; border-radius: 50%; background: #8a8a8a; }
+  .chip--status.aberto .ponto { background: var(--zap); box-shadow: 0 0 0 4px rgba(37, 211, 102, .18); }
+  .chip--status.fechado .ponto { background: #ff6b5a; }
+  .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; margin: 0 0 1.4rem; padding: 0 1rem; }
+  .tags span { font-size: .75rem; font-weight: 700; color: var(--mudo); padding: .2rem .6rem; border-radius: 6px; background: rgba(255, 255, 255, .05); }
+
+  /* ---------- links ---------- */
+  .links { display: grid; gap: .7rem; margin: 0; padding: 0 1rem; list-style: none; }
+  .link {
+    position: relative; isolation: isolate; overflow: hidden;
+    display: flex; align-items: center; gap: .9rem; padding: .95rem 1.05rem; border-radius: 18px;
+    background: var(--cartao); border: 1px solid var(--linha); font-weight: 700; font-size: 1rem;
+    transition: transform .2s ease, border-color .3s ease, background .2s ease;
+  }
+  .link .ico {
+    flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center;
+    background: var(--cartao2); color: var(--verde);
+  }
+  .link .ico svg { width: 22px; height: 22px; }
+  .link small { display: block; font-weight: 400; font-size: .82rem; color: var(--mudo); }
+  .link__seta { margin-left: auto; width: 18px; height: 18px; opacity: .5; flex: none; }
+  .link:hover, .link:focus-visible { transform: translateY(-2px); border-color: var(--verde); }
+  /* brilho que atravessa uma vez no hover, sem animacao em repouso
+     (templates/componentes/botao-brilho-hover.html) */
+  .link::before {
+    content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%; z-index: -1;
+    background: linear-gradient(115deg, transparent, rgba(255, 255, 255, .12), transparent);
+    transform: skewX(-20deg); transition: left .65s ease; pointer-events: none;
+  }
+  .link:hover::before, .link:focus-visible::before { left: 130%; }
+
+  /* Avaliacao no Google em primeiro, unico cartao claro da pagina */
+  .link--google {
+    background: #fff; color: #1f1f1f; padding: 1.05rem 1.1rem; border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #4285f4, #ea4335, #fbbc05, #34a853);
+    background-origin: border-box; background-clip: padding-box, border-box;
+    box-shadow: 0 10px 28px rgba(66, 133, 244, .22);
+  }
+  .link--google .ico { background: #f1f3f4; }
+  .link--google span { font-size: 1.06rem; }
+  .link--google small { color: #5f6368; font-weight: 600; }
+  .link--google .mini-estrelas { display: flex; gap: 2px; margin: .2rem 0 .1rem; }
+  .link--google .mini-estrelas svg { width: 17px; height: 17px; fill: #fbbc05; }
+  .link--google:hover, .link--google:focus-visible { border-color: transparent; transform: translateY(-2px) scale(1.01); }
+  .link--google::before { background: linear-gradient(115deg, transparent, rgba(66, 133, 244, .14), transparent); }
+  .link--google .link__seta { color: #4285f4; opacity: 1; }
+
+  .link--zap { background: var(--zap); border-color: var(--zap); color: var(--zap-escuro); padding: 1.1rem 1.1rem; }
+  .link--zap .ico { background: rgba(255, 255, 255, .28); color: var(--zap-escuro); }
+  .link--zap small { color: #145a2e; font-weight: 600; }
+  .link--zap span { font-size: 1.08rem; }
+  .link--zap:hover, .link--zap:focus-visible { border-color: #fff; }
+  .link--zap::before { background: linear-gradient(115deg, transparent, rgba(255, 255, 255, .55), transparent); }
+  .link--zap .link__seta { opacity: .7; }
+
+  .ico--ig { background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7) !important; color: #fff !important; }
+  .ico--fb { background: #1877f2 !important; color: #fff !important; }
+  .ico--site { background: var(--azul) !important; color: #fff !important; }
+
+  /* ---------- avaliacao com estrelas tocaveis ---------- */
+  .avaliar {
+    margin: 1.6rem 1rem 0; padding: 1.3rem 1.1rem 1.15rem; border-radius: 22px; text-align: center;
+    background: radial-gradient(120% 90% at 50% 0%, rgba(47, 191, 58, .16), transparent 60%), var(--cartao);
+    border: 1px solid var(--linha);
+  }
+  .avaliar__topo { display: flex; align-items: center; justify-content: center; gap: .6rem; font-weight: 700; }
+  .avaliar__topo svg { width: 22px; height: 22px; }
+  .avaliar__nota { font-size: 2.6rem; font-weight: 900; font-style: italic; color: #fbbc05; line-height: 1; margin: .5rem 0 .1rem; }
+  .avaliar__qtd { color: var(--mudo); font-size: .85rem; margin: 0; }
+  .avaliar h2 { margin: 1.1rem 0 .2rem; font-size: 1.12rem; }
+  .avaliar p.dica { margin: 0 0 .8rem; color: var(--mudo); font-size: .88rem; }
+  .estrelas { display: inline-flex; gap: .35rem; }
+  .estrela {
+    width: 46px; height: 46px; padding: 0; border: 0; background: none; cursor: pointer; color: rgba(251, 188, 5, .32);
+    transition: transform .15s ease, color .15s ease;
+  }
+  .estrela svg { width: 100%; height: 100%; fill: currentColor; stroke: none; }
+  .estrela.acesa { color: #fbbc05; }
+  .estrela:hover { transform: scale(1.12); }
+  .estrela.pulo { animation: pulo .45s ease; }
+  @keyframes pulo { 40% { transform: scale(1.3) rotate(-8deg); } 100% { transform: scale(1); } }
+  .avaliar__msg { min-height: 1.4em; margin: .55rem 0 0; font-size: .9rem; font-weight: 600; color: var(--verde); }
+
+  /* ---------- por dentro (fotos reais do Google) ---------- */
+  .secao { margin: 1.8rem 0 0; }
+  .secao h2 { margin: 0 1rem .8rem; font-size: 1.1rem; }
+  .secao h2 em { font-style: italic; color: var(--verde); }
+  .galeria-caixa { position: relative; }
+  .galeria {
+    display: flex; gap: .7rem; overflow-x: auto; padding: 0 1rem .4rem; scroll-padding: 0 1rem; scroll-snap-type: x mandatory;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .galeria::-webkit-scrollbar { display: none; }
+  .galeria figure {
+    flex: none; width: 74%; margin: 0; scroll-snap-align: start; border-radius: 18px; overflow: hidden;
+    position: relative; background: var(--cartao); aspect-ratio: 4 / 3;
+  }
+  .galeria img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .galeria figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 1.6rem .9rem .7rem; font-weight: 700; font-size: .92rem;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .78));
+  }
+  /* Desktop: setas e arrastar com o mouse; no celular o dedo ja desliza */
+  .galeria-seta { display: none; }
+  @media (hover: hover) and (pointer: fine) {
+    .galeria { cursor: grab; user-select: none; }
+    .galeria.arrastando { cursor: grabbing; scroll-snap-type: none; }
+    .galeria.arrastando img { pointer-events: none; }
+    .galeria-seta {
+      display: grid; place-items: center; position: absolute; top: 50%; z-index: 2; width: 42px; height: 42px;
+      margin-top: -21px; border-radius: 50%; border: 1px solid var(--linha); cursor: pointer;
+      background: rgba(6, 18, 48, .82); color: #fff; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+      transition: opacity .2s ease, transform .2s ease, border-color .2s ease;
+    }
+    .galeria-seta:hover { border-color: var(--verde); transform: scale(1.08); }
+    .galeria-seta svg { width: 20px; height: 20px; }
+    .galeria-seta--esq { left: 8px; }
+    .galeria-seta--dir { right: 8px; }
+    .galeria-seta[disabled] { opacity: 0; pointer-events: none; }
+  }
+
+  /* ---------- horario e endereco ---------- */
+  .info { margin: 1.6rem 1rem 0; border-radius: 18px; background: var(--cartao); border: 1px solid var(--linha); overflow: hidden; }
+  .info details summary {
+    list-style: none; cursor: pointer; display: flex; align-items: center; gap: .8rem; padding: 1rem 1.05rem; font-weight: 700;
+  }
+  .info details summary::-webkit-details-marker { display: none; }
+  .info svg { width: 20px; height: 20px; color: var(--verde); flex: none; }
+  .info .gira { margin-left: auto; transition: transform .25s ease; color: var(--mudo); }
+  .info details[open] .gira { transform: rotate(180deg); }
+  .horas { margin: 0; padding: 0 1.05rem .9rem 3.85rem; list-style: none; font-size: .92rem; color: var(--mudo); }
+  .horas li { display: flex; justify-content: space-between; padding: .28rem 0; border-bottom: 1px dashed rgba(255, 255, 255, .07); }
+  .horas li:last-child { border-bottom: 0; }
+  .horas li.hoje { color: var(--texto); font-weight: 700; }
+  .info__end { display: flex; gap: .8rem; padding: 1rem 1.05rem; border-top: 1px solid var(--linha); font-size: .92rem; color: var(--mudo); }
+  .info__end strong { color: var(--texto); display: block; font-size: .95rem; }
+
+  .rodape { margin: 2rem 1rem 0; text-align: center; font-size: .8rem; color: var(--mudo); }
+  .rodape b { color: var(--verde); font-style: italic; font-size: 1rem; display: block; margin-bottom: .35rem; }
+
+  /* entrada em cascata: so anima quem pode animar; o estado final e o padrao */
+  @media (prefers-reduced-motion: no-preference) {
+    .entra { opacity: 0; transform: translateY(14px); animation: entra .55s ease forwards; animation-delay: calc(var(--i, 0) * 70ms + 120ms); }
+    @keyframes entra { to { opacity: 1; transform: none; } }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .link, .link::before, .estrela, .info .gira { transition: none; }
+    .estrela.pulo { animation: none; }
+  }
+</style>
+</head>
+<body>
+<main class="pagina">
+
+  <header class="topo">
+    <img id="fachada" src="assets/img/fachada.webp" alt="Fachada da Lana Autopeças, Rede ANCORA, em Itabira, com a picape da loja na frente" width="1200" height="1020" fetchpriority="high">
+    <span class="topo__selo">Itabira · MG</span>
+  </header>
+
+  <section class="perfil">
+    <div class="perfil__logo entra" style="--i:0">
+      <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LANA Autopeças" viewBox="0 0 175 53" fill="none">
+  <path d="M88.9876 46.7812L87.9126 44.1576L86.8375 46.7812H88.9876ZM87.1154 42.0187H88.7563L92.2242 50.168H90.3632L89.6233 48.3536H86.2019L85.4625 50.168H83.6475L87.1154 42.0187Z" fill="white"/>
+  <path d="M98.8472 50.2949C97.7608 50.2949 96.9052 49.9944 96.2815 49.3934C95.6572 48.7923 95.3447 47.8948 95.3447 46.7007V42.0772H97.1252V46.6541C97.1252 47.317 97.2788 47.8156 97.5873 48.1507C97.8951 48.4858 98.3233 48.6534 98.8705 48.6534C99.4177 48.6534 99.8452 48.4918 100.153 48.168C100.462 47.8449 100.616 47.3595 100.616 46.712V42.0772H102.396V46.6428C102.396 47.2592 102.313 47.7944 102.147 48.2491C101.981 48.7039 101.745 49.0835 101.436 49.3874C101.128 49.6919 100.755 49.9193 100.315 50.0695C99.8758 50.2198 99.3864 50.2949 98.8472 50.2949Z" fill="white"/>
+  <path d="M108.094 43.7181H105.632V42.0766H112.336V43.7181H109.874V50.168H108.094V43.7181Z" fill="white"/>
+  <path d="M119.652 48.6651C120.007 48.6651 120.335 48.5999 120.635 48.469C120.936 48.338 121.192 48.1565 121.404 47.9251C121.616 47.6944 121.781 47.4265 121.901 47.1219C122.02 46.8181 122.08 46.4923 122.08 46.1453V46.122C122.08 45.7756 122.02 45.4478 121.901 45.14C121.781 44.8315 121.612 44.5616 121.392 44.3308C121.172 44.0995 120.912 43.9166 120.612 43.7817C120.311 43.6467 119.984 43.5796 119.629 43.5796C119.268 43.5796 118.938 43.6447 118.641 43.7757C118.345 43.9067 118.09 44.0875 117.879 44.3189C117.667 44.5503 117.501 44.8182 117.381 45.1227C117.262 45.4272 117.202 45.7523 117.202 46.0994V46.122C117.202 46.469 117.262 46.7968 117.381 47.1047C117.501 47.4132 117.671 47.6824 117.89 47.9138C118.109 48.1452 118.367 48.328 118.664 48.463C118.961 48.5979 119.29 48.6651 119.652 48.6651ZM119.629 50.3066C119.006 50.3066 118.431 50.1969 117.907 49.9769C117.383 49.7575 116.931 49.4609 116.549 49.0873C116.168 48.7136 115.871 48.2742 115.659 47.7695C115.447 47.2649 115.341 46.723 115.341 46.1453V46.122C115.341 45.5442 115.449 45.003 115.665 44.4984C115.881 43.9938 116.179 43.5503 116.561 43.1687C116.942 42.7877 117.397 42.4872 117.924 42.2678C118.452 42.0477 119.028 41.938 119.652 41.938C120.277 41.938 120.851 42.0477 121.374 42.2678C121.898 42.4872 122.352 42.7837 122.733 43.1574C123.114 43.5317 123.411 43.9705 123.623 44.4751C123.834 44.9798 123.941 45.521 123.941 46.0994V46.122C123.941 46.7004 123.833 47.2416 123.617 47.7463C123.402 48.2509 123.103 48.6943 122.721 49.0753C122.34 49.4569 121.885 49.7575 121.357 49.9769C120.83 50.1969 120.253 50.3066 119.629 50.3066Z" fill="white"/>
+  <path d="M130.714 46.1575C131.161 46.1575 131.507 46.0398 131.754 45.8051C132.001 45.5698 132.124 45.2786 132.124 44.9322V44.9089C132.124 44.5086 131.995 44.2041 131.737 43.996C131.479 43.7879 131.126 43.6836 130.68 43.6836H129.304V46.1575H130.714ZM127.524 42.0772H130.83C131.315 42.0772 131.749 42.1451 132.13 42.2794C132.511 42.4143 132.835 42.6051 133.101 42.8518C133.366 43.0985 133.571 43.393 133.713 43.7361C133.856 44.0791 133.927 44.4581 133.927 44.8743V44.8976C133.927 45.3677 133.842 45.7799 133.673 46.1342C133.503 46.4886 133.271 46.7858 132.973 47.0245C132.677 47.2632 132.33 47.4427 131.934 47.5617C131.537 47.6814 131.11 47.7412 130.656 47.7412H129.304V50.168H127.524V42.0772Z" fill="white"/>
+  <path d="M137.245 42.0772H143.336V43.6609H139.002V45.3018H142.816V46.8855H139.002V48.5849H143.394V50.168H137.245V42.0772Z" fill="white"/>
+  <path d="M148.861 51.555L149.786 50.1913C149.323 50.083 148.898 49.9061 148.509 49.6594C148.12 49.4128 147.786 49.1123 147.509 48.7579C147.232 48.4035 147.016 48.0046 146.861 47.5618C146.707 47.1183 146.631 46.6463 146.631 46.1456V46.1224C146.631 45.5446 146.734 45.0034 146.942 44.4988C147.151 43.9941 147.44 43.5507 147.809 43.169C148.179 42.7881 148.623 42.4876 149.138 42.2675C149.655 42.0481 150.225 41.9384 150.849 41.9384C151.227 41.9384 151.572 41.969 151.884 42.0308C152.196 42.0926 152.479 42.1771 152.733 42.2848C152.988 42.3931 153.223 42.5241 153.439 42.6777C153.654 42.832 153.854 43.0015 154.039 43.1863L152.907 44.4928C152.59 44.2076 152.269 43.9842 151.942 43.8226C151.614 43.6604 151.246 43.5799 150.838 43.5799C150.499 43.5799 150.185 43.6451 149.896 43.7761C149.607 43.907 149.359 44.0879 149.15 44.3193C148.942 44.5506 148.78 44.8186 148.665 45.1224C148.549 45.4269 148.492 45.7527 148.492 46.0991V46.1224C148.492 46.4688 148.549 46.7965 148.665 47.105C148.78 47.4135 148.94 47.6828 149.144 47.9142C149.349 48.1449 149.595 48.3284 149.884 48.4633C150.173 48.5977 150.491 48.6655 150.838 48.6655C151.3 48.6655 151.692 48.5804 152.011 48.4108C152.331 48.2413 152.648 48.0106 152.965 47.7174L154.097 48.8616C153.904 49.0697 153.704 49.2592 153.497 49.4281C153.289 49.5976 153.063 49.7445 152.82 49.8675C152.578 49.9905 152.313 50.0889 152.029 50.1621C151.743 50.2352 151.427 50.2798 151.081 50.295L150.329 52.168L148.861 51.555Z" fill="white"/>
+  <path d="M162.165 46.7812L161.09 44.1576L160.015 46.7812H162.165ZM160.293 42.0187H161.933L165.401 50.168H163.54L162.8 48.3536H159.379L158.64 50.168H156.825L160.293 42.0187Z" fill="white"/>
+  <path d="M171.539 50.2832C170.922 50.2832 170.318 50.1768 169.724 49.9654C169.131 49.7533 168.592 49.4275 168.106 48.9887L169.158 47.7288C169.528 48.0293 169.907 48.268 170.296 48.4449C170.685 48.623 171.111 48.7108 171.574 48.7108C171.943 48.7108 172.23 48.6436 172.435 48.5087C172.639 48.3744 172.741 48.1869 172.741 47.9482V47.9249C172.741 47.8092 172.72 47.7075 172.677 47.6191C172.635 47.53 172.554 47.4476 172.434 47.3704C172.314 47.2933 172.148 47.2162 171.935 47.1391C171.723 47.0619 171.447 46.9808 171.107 46.8964C170.697 46.796 170.326 46.6843 169.994 46.5613C169.662 46.4383 169.38 46.286 169.148 46.1045C168.916 45.9237 168.737 45.6983 168.61 45.4284C168.482 45.1591 168.418 44.8233 168.418 44.4231V44.3998C168.418 44.0302 168.487 43.6971 168.625 43.3999C168.762 43.1033 168.956 42.8467 169.205 42.6313C169.454 42.4159 169.75 42.2497 170.096 42.1346C170.441 42.0183 170.822 41.9604 171.238 41.9604C171.831 41.9604 172.377 42.0495 172.874 42.2264C173.371 42.4039 173.827 42.6585 174.244 42.9896L173.319 44.33C172.956 44.084 172.602 43.8892 172.256 43.7469C171.909 43.604 171.562 43.5328 171.215 43.5328C170.869 43.5328 170.609 43.6007 170.435 43.735C170.262 43.8699 170.175 44.0375 170.175 44.2383V44.2609C170.175 44.3918 170.2 44.5055 170.25 44.6019C170.3 44.6983 170.391 44.7854 170.522 44.8619C170.654 44.939 170.834 45.0122 171.062 45.0813C171.29 45.1511 171.578 45.2322 171.925 45.3246C172.334 45.4324 172.699 45.5534 173.02 45.6883C173.341 45.8233 173.611 45.9855 173.831 46.1743C174.051 46.3632 174.218 46.5846 174.329 46.8385C174.442 47.0932 174.498 47.3977 174.498 47.7514V47.7747C174.498 48.1756 174.425 48.532 174.28 48.8444C174.134 49.1563 173.931 49.4182 173.671 49.6296C173.411 49.8417 173.1 50.004 172.739 50.1157C172.378 50.2274 171.978 50.2832 171.539 50.2832Z" fill="white"/>
+  <path d="M49.1191 22.3278L55.765 11.063L62.4529 22.3278H49.1191ZM59.838 2.51419C58.9325 1.00495 57.7763 -0.000324249 56.0662 -0.000324249C54.3569 -0.000324249 53.2 1.00495 52.2945 2.51419L31.5248 37.0625H40.426L45.5295 28.4126H66.0738L71.2032 37.0625H80.607L59.838 2.51419Z" fill="white"/>
+  <path d="M91.3162 12.7228V37.0628H83.873V4.67662C83.873 1.80973 85.3816 0.0498314 87.7957 0.0498314C88.9519 0.0498314 89.8575 0.452076 90.9638 1.50854L114.901 24.4902V0.150227H122.394V32.8888C122.394 35.8055 120.785 37.5654 118.472 37.5654C117.265 37.5654 116.31 37.1133 115.253 36.0569L91.3162 12.7228Z" fill="white"/>
+  <path d="M165.837 22.3398L153.923 2.51419C153.018 1.00495 151.861 -0.000324249 150.152 -0.000324249C148.441 -0.000324249 147.285 1.00495 146.379 2.51419L125.61 37.0625H134.512L149.849 11.063L156.538 22.3278" fill="white"/>
+  <path d="M174.692 37.0625L169.5 28.4253H160.167L165.288 37.0625H174.692Z" fill="white"/>
+  <path d="M169.5 28.4297L165.837 22.3409L163.754 22.3369L151.476 22.3322L146.932 22.3302L150.6 28.4297H169.5Z" fill="#D12128"/>
+  <path d="M81.5475 47.5859L79.8069 44.6918L78.8163 44.6898L1.76721 44.6878L0 44.6865L1.74394 47.5859H81.5475Z" fill="#D12128"/>
+  <path d="M0.0443115 37.0879V0.527706H7.88904V29.2425H31.5249L27.2532 37.0879H0.0443115Z" fill="white"/>
+</svg>
+      <span class="perfil__ancora">Rede ANCORA</span>
+    </div>
+    <h1 class="entra" style="--i:1">Lana <em>Autopeças</em></h1>
+    <p class="perfil__slogan entra" style="--i:2">Pensou em peças, <b>pensou LANA</b></p>
+    <p class="perfil__linha entra" style="--i:3">35 anos de história em Itabira. Uma franquia Rede ANCORA, com peças para linha leve e pesada.</p>
+    <div class="chips entra" style="--i:4">
+      <a class="chip chip--nota" href="#avaliar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        4,4 no Google
+      </a>
+      <span class="chip chip--status" id="status"><span class="ponto"></span><span id="status-texto">Seg a sex 7h30 às 18h</span></span>
+    </div>
+    <div class="tags entra" style="--i:5"><span>Linha leve</span><span>Linha pesada</span><span>Oficina</span><span>Entrega</span><span>Retirada na porta</span></div>
+  </section>
+
+  <ul class="links">
+    <li class="entra" style="--i:6">
+      <a class="link link--google" href="https://search.google.com/local/writereview?placeid=ChIJn2rB9qWhpQARpsPn7TLJEKw" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09c.95-2.85 3.6-4.96 6.73-4.96z"/></svg></span>
+        <span>Avalie a Lana
+          <span class="mini-estrelas" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.1 6.6.8-4.9 4.6 1.3 6.5L12 16.8 6.1 20l1.3-6.5L2.5 8.9l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.1 6.6.8-4.9 4.6 1.3 6.5L12 16.8 6.1 20l1.3-6.5L2.5 8.9l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.1 6.6.8-4.9 4.6 1.3 6.5L12 16.8 6.1 20l1.3-6.5L2.5 8.9l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.1 6.6.8-4.9 4.6 1.3 6.5L12 16.8 6.1 20l1.3-6.5L2.5 8.9l6.6-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.1 6.6.8-4.9 4.6 1.3 6.5L12 16.8 6.1 20l1.3-6.5L2.5 8.9l6.6-.8z"/></svg></span>
+          <small>No Google · leva só 1 minuto</small></span>
+        <svg class="link__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </li>
+    <li class="entra" style="--i:7">
+      <a class="link link--zap" href="https://wa.me/553138397900?text=Ol%C3%A1%2C%20Lana%21%20Quero%20fazer%20um%20or%C3%A7amento%20de%20pe%C3%A7a." target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+        <span>Orçamento no WhatsApp<small>Entrega ou retirada na porta</small></span>
+        <svg class="link__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </li>
+    <li class="entra" style="--i:8">
+      <a class="link" href="https://www.instagram.com/ancora.autopecaslana/" target="_blank" rel="noopener">
+        <span class="ico ico--ig"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span>
+        <span>Instagram<small>@ancora.autopecaslana · 5,3 mil seguidores</small></span>
+        <svg class="link__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </li>
+    <li class="entra" style="--i:9">
+      <a class="link" href="https://www.facebook.com/lanasolucoes.automotivas" target="_blank" rel="noopener">
+        <span class="ico ico--fb"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span>
+        <span>Facebook<small>Lana Soluções Automotivas</small></span>
+        <svg class="link__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </li>
+    <li class="entra" style="--i:10">
+      <a class="link" href="https://www.lanaautomotiva.com.br/" target="_blank" rel="noopener">
+        <span class="ico ico--site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+        <span>Site oficial<small>lanaautomotiva.com.br</small></span>
+        <svg class="link__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </li>
+    <li class="entra" style="--i:11">
+      <a class="link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Auto%20Pe%C3%A7as%20Lana&amp;destination_place_id=ChIJn2rB9qWhpQARpsPn7TLJEKw" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg></span>
+        <span>Como chegar<small>Vila Santa Rosa · abre no Google Maps</small></span>
+        <svg class="link__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </li>
+    <li class="entra" style="--i:12">
+      <a class="link" href="tel:+553138397900">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg></span>
+        <span>Ligar agora<small>(31) 3839-7900</small></span>
+      </a>
+    </li>
+    <li class="entra" style="--i:13">
+      <a class="link" href="https://wa.me/553138397900?text=Ol%C3%A1%21%20Quero%20trabalhar%20na%20Lana.%20Como%20fa%C3%A7o%20para%20enviar%20meu%20curr%C3%ADculo%3F" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>
+        <span>Trabalhe conosco<small>Envie seu currículo pelo WhatsApp</small></span>
+        <svg class="link__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </li>
+  </ul>
+
+  <!-- place_id ChIJn2rB9qWhpQARpsPn7TLJEKw, conferido na Places API em 06/10/2026
+       contra o link do Maps que o Marcelo mandou (cid 0xac10c932ede7c3a6) -->
+  <section class="avaliar entra" style="--i:14" id="avaliar">
+    <div class="avaliar__topo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09c.95-2.85 3.6-4.96 6.73-4.96z"/></svg> Avaliações no Google</div>
+    <p class="avaliar__nota">4,4</p>
+    <p class="avaliar__qtd">513 clientes já avaliaram</p>
+    <h2>Foi bem atendido na Lana?</h2>
+    <p class="dica">Toque nas estrelas e conte como foi. Abre direto no Google.</p>
+    <div class="estrelas" id="estrelas" role="group" aria-label="Avaliar a Lana Autopeças no Google"></div>
+    <p class="avaliar__msg" id="msg-avaliar" aria-live="polite"></p>
+  </section>
+
+  <section class="secao entra" style="--i:15">
+    <h2>Por dentro da <em>Lana</em></h2>
+    <div class="galeria-caixa">
+      <button class="galeria-seta galeria-seta--esq" type="button" aria-label="Foto anterior" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+      <button class="galeria-seta galeria-seta--dir" type="button" aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      <div class="galeria" id="galeria" tabindex="0" aria-label="Fotos da loja">
+        <figure><img src="assets/img/balcao.webp" alt="Balcão de atendimento da Lana" width="900" height="675" loading="lazy"><figcaption>Balcão de atendimento</figcaption></figure>
+        <figure><img src="assets/img/entrega.webp" alt="Motos de entrega da Lana" width="900" height="675" loading="lazy"><figcaption>Entrega</figcaption></figure>
+        <figure><img src="assets/img/oficina.webp" alt="Oficina automotiva" width="900" height="675" loading="lazy"><figcaption>Oficina</figcaption></figure>
+        <figure><img src="assets/img/equipe.webp" alt="Equipe da Lana em frente à loja" width="900" height="675" loading="lazy"><figcaption>Nossa equipe</figcaption></figure>
+        <figure><img src="assets/img/capacitacao.webp" alt="Treinamento da equipe" width="900" height="675" loading="lazy"><figcaption>Capacitação da equipe</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="info entra" style="--i:16">
+    <details>
+      <summary>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Horário de funcionamento
+        <svg class="gira" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <ul class="horas" id="horas">
+        <li data-dia="1"><span>Segunda</span><span>7h30 às 18h</span></li>
+        <li data-dia="2"><span>Terça</span><span>7h30 às 18h</span></li>
+        <li data-dia="3"><span>Quarta</span><span>7h30 às 18h</span></li>
+        <li data-dia="4"><span>Quinta</span><span>7h30 às 18h</span></li>
+        <li data-dia="5"><span>Sexta</span><span>7h30 às 18h</span></li>
+        <li data-dia="6"><span>Sábado</span><span>7h30 às 12h</span></li>
+        <li data-dia="0"><span>Domingo</span><span>Fechado</span></li>
+      </ul>
+    </details>
+    <a class="info__end" href="https://www.google.com/maps/place/?q=place_id:ChIJn2rB9qWhpQARpsPn7TLJEKw" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+      <span><strong>Av. Ver. Osório Sampaio, 378</strong>Vila Santa Rosa, Itabira/MG</span>
+    </a>
+  </section>
+
+  <footer class="rodape">
+    <b>Pensou em peças, pensou LANA</b>
+    Lana Autopeças · Rede ANCORA · Itabira/MG
+  </footer>
+</main>
+
+<script>
+  // Horario real (Google, 06/10/2026). [abre, fecha] em minutos do dia; null = fechado.
+  var HORAS = { 0: null, 1: [450, 1080], 2: [450, 1080], 3: [450, 1080], 4: [450, 1080], 5: [450, 1080], 6: [450, 720] };
+  var NOMES = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+  var hh = function (m) { return Math.floor(m / 60) + 'h' + (m % 60 ? String(m % 60).padStart(2, '0') : ''); };
+
+  (function status() {
+    var agora = new Date(), dia = agora.getDay(), min = agora.getHours() * 60 + agora.getMinutes();
+    var hoje = HORAS[dia], el = document.getElementById('status'), txt = document.getElementById('status-texto');
+    var li = document.querySelector('#horas li[data-dia="' + dia + '"]');
+    if (li) li.classList.add('hoje');
+    if (hoje && min >= hoje[0] && min < hoje[1]) {
+      el.classList.add('aberto'); txt.textContent = 'Aberto agora · fecha às ' + hh(hoje[1]);
+      return;
+    }
+    el.classList.add('fechado');
+    if (hoje && min < hoje[0]) { txt.textContent = 'Fechado · abre hoje às ' + hh(hoje[0]); return; }
+    for (var i = 1; i <= 7; i++) {
+      var d = (dia + i) % 7;
+      if (HORAS[d]) { txt.textContent = 'Fechado · abre ' + (i === 1 ? 'amanhã' : NOMES[d]) + ' às ' + hh(HORAS[d][0]); return; }
+    }
+  })();
+
+  // Estrelas tocaveis: acendem no toque e abrem a tela de avaliacao do Google.
+  (function estrelas() {
+    var LINK = 'https://search.google.com/local/writereview?placeid=ChIJn2rB9qWhpQARpsPn7TLJEKw';
+    var FRASES = ['', 'Poxa! Conta pra gente o que podemos melhorar.', 'Obrigado! Conta pra gente como foi.', 'Obrigado! Sua opinião ajuda muito.', 'Que bom! Conta o que você mais gostou.', 'Valeu demais! Conta sua experiência.'];
+    var caixa = document.getElementById('estrelas'), msg = document.getElementById('msg-avaliar');
+    var svg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>';
+    var bts = [];
+    function acende(n) { bts.forEach(function (b, i) { b.classList.toggle('acesa', i < n); }); }
+    for (var i = 1; i <= 5; i++) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'estrela'; b.innerHTML = svg;
+      b.setAttribute('aria-label', i + (i === 1 ? ' estrela' : ' estrelas'));
+      (function (n, b) {
+        b.addEventListener('mouseenter', function () { acende(n); });
+        b.addEventListener('focus', function () { acende(n); });
+        b.addEventListener('click', function () {
+          acende(n);
+          bts.slice(0, n).forEach(function (x, k) { setTimeout(function () { x.classList.remove('pulo'); void x.offsetWidth; x.classList.add('pulo'); }, k * 60); });
+          msg.textContent = FRASES[n] + ' Abrindo o Google...';
+          setTimeout(function () { window.open(LINK, '_blank', 'noopener'); }, 650);
+        });
+      })(i, b);
+      bts.push(b); caixa.appendChild(b);
+    }
+    caixa.addEventListener('mouseleave', function () { acende(0); });
+  })();
+
+  // Galeria no desktop: setas e arrastar com o mouse. No toque o navegador ja desliza sozinho.
+  (function galeria() {
+    var g = document.getElementById('galeria');
+    var esq = document.querySelector('.galeria-seta--esq'), dir = document.querySelector('.galeria-seta--dir');
+    var passo = function () { var f = g.querySelector('figure'); return f ? f.offsetWidth + 11 : 300; };
+    function setas() {
+      esq.disabled = g.scrollLeft <= 4;
+      dir.disabled = g.scrollLeft + g.clientWidth >= g.scrollWidth - 4;
+    }
+    esq.addEventListener('click', function () { g.scrollBy({ left: -passo(), behavior: 'smooth' }); });
+    dir.addEventListener('click', function () { g.scrollBy({ left: passo(), behavior: 'smooth' }); });
+    g.addEventListener('scroll', setas, { passive: true });
+    window.addEventListener('resize', setas);
+    setas();
+    var x0 = 0, s0 = 0, ativo = false, moveu = false;
+    g.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      ativo = true; moveu = false; x0 = e.clientX; s0 = g.scrollLeft;
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!ativo) return;
+      var dx = e.clientX - x0;
+      if (!moveu && Math.abs(dx) > 4) { moveu = true; g.classList.add('arrastando'); }
+      if (moveu) { g.scrollLeft = s0 - dx; e.preventDefault(); }
+    });
+    window.addEventListener('pointerup', function () {
+      if (!ativo) return;
+      ativo = false;
+      if (!moveu) return;
+      var p = passo(), alvo = Math.round(g.scrollLeft / p) * p;
+      g.classList.remove('arrastando');
+      g.scrollTo({ left: alvo, behavior: 'smooth' });
+    });
+    g.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  })();
+
+  // Parallax leve na fachada (so com movimento liberado).
+  (function parallax() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var img = document.getElementById('fachada'), pedido = false;
+    window.addEventListener('scroll', function () {
+      if (pedido) return; pedido = true;
+      requestAnimationFrame(function () {
+        var y = Math.min(window.scrollY, 300);
+        img.style.transform = 'translateY(' + (y * 0.35) + 'px) scale(' + (1 + y * 0.0006) + ')';
+        pedido = false;
+      });
+    }, { passive: true });
+  })();
+</script>
+</body>
+</html>
